@@ -1,5 +1,5 @@
- .u-section-1 {
-  background-image: url("images/photo-1623387641168-d9803ddd3f35.jpeg");
+  .u-section-1 {
+  background-image: url("../images/photo-1623387641168-d9803ddd3f35.jpeg");
   background-position: 50% 50%;
   background-size: 111%;
 }
@@ -354,7 +354,7 @@
 }
 
 .u-section-4 .u-image-1 {
-  background-image: url("images/ffff-min1.jpg");
+  background-image: url("../images/ffff-min1.jpg");
   background-position: 50% 50%;
   min-height: 475px;
 }
@@ -374,7 +374,7 @@
 }
 
 .u-section-4 .u-image-3 {
-  background-image: url("images/16d17f42-5ef1-0abe-4606-2340daa35226.jpg");
+  background-image: url("../images/16d17f42-5ef1-0abe-4606-2340daa35226.jpg");
   background-position: 50% 6.84%;
   min-height: 564px;
 }
