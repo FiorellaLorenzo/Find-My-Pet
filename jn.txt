@@ -1,0 +1,105 @@
+Ejercicio Propuesto:
+
+Dado un determinado programa de alto nivel genérico, realizar las tareas de un eventual compilador, cargar el programa y datos en memoria y luego ciclo a ciclo describir su ejecución.
+
+El programa díria:
+
+ 
+
+MAGNITUDES
+
+R=P+Q
+
+P=8
+
+Q=1
+
+ 
+
+Suponemos que el compilador toma las siguientes decisiones:
+
+Dirección de inicio del programa: 0001
+
+Dirección de P: 1100
+
+Dirección de Q: 1110
+
+Dirección de R: 1111
+
+ 
+
+La arquitectura del procesador determina que:
+
+Su bus de datos es de 8 bits
+
+Su bus de direcciones es de 4 bits
+
+Puede controlar una memoria de 4 bits por posición
+
+Tiene un solo acumulador el A.
+
+ 
+
+El set de instrucciones del Procesador del modelo posee las siguientes instrucciones para realizar el programa:
+
+ 
+
+Con el código de operación 0010, el procesador realiza  A<A+[M]
+
+Con el código de operación 0111, el procesador realiza  A<[M]
+
+Con el código de operación 1010, el procesador realiza  [M]<A
+
+ 
+
+En función de todo esto el programa que escribirá el compilador en la memoria es:
+
+ 
+
+0111
+
+1100
+
+0010
+
+1110
+
+1010
+
+1111
+
+ 
+
+Y para iniciar la ejecución, tanto el programa, como los datos debe estar en la memoria y el Puntero de Instrucción debe apuntar a la dirección 0001.
+
+Por lo tanto, procederemos a cargar programa y datos en la memoria, estableceremos 0001 en el puntero de instrucciones, y fijaremos Rl en 0000 (condición de inicio)
+
+A partir de aquí, el clock ingresa al procesador, el RL activa la ROM de Control, se activa el primer microcódigo y pasaremos a analizar sus efectos.
+
+------------------------
+
+
+
+C=0 en NATURALES la operación es CORRECTA
+C=1 en NATURALES la operación es INCORRECTA
+
+S=0 el resultado en ENTEROS es POSITIVO
+S=1 el resultado en ENTEROS es NEGATIVO
+
+V=0 en ENTEROS la operación es CORRECTA
+V=1 en ENTEROS la operación es INCORRECTA
+
+Z=0 en AMBOS el resultado es DIFERENTE a cero
+Z=1 en AMBOS el resultado es IGUAL a cero
+
+Minuendo - Sustraendo
+En Naturales:
+M   >=  S  | C=0
+M   >   S  | C=0 Z=0
+M   <   S  | C=1
+M   =   S  | C=0 Z=1
+
+En Enteros:
+M   >=  S  | V=0 S=0, V=1 S=1, V=S
+M   <   S  | V=0 S=1, V=1 S=0, V<>S
+M   =   S  | V=0 S=0 Z=1, V=1 S=1 Z=0, V=S Z=1
