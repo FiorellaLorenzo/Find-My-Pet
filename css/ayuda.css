@@ -1,0 +1,264 @@
+.u-section-1-ayuda {
+  background-image: url("../images/pet.jpg");
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  color: #fff;
+}
+
+.u-section-1-ayuda .u-sheet-1 {
+  min-height: 650px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+  padding: 0px 0px 0 0px;
+  text-align: right;
+}
+
+.u-section-1-ayuda .u-text-1 {
+  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: 4px;
+  color: #fff;
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+.u-section-1-ayuda .u-text-2 {
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 3rem;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.u-section-1-ayuda .u-text-3 {
+  font-size: 1.2rem;
+  color: #fefefe;
+  max-width: 700px;
+}
+
+/* 📱 Responsive */
+@media (max-width: 991px) {
+  .u-section-1-perdidas .u-text-2 {
+    font-size: 2.4rem;
+  }
+  .u-section-1-perdidas .u-text-3 {
+    font-size: 1rem;
+    padding: 0 20px;
+  }
+}
+
+/* ======================================
+   CONFIGURACIÓN GENERAL
+========================================= */
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #333;
+  margin: 0;
+  background-color: #fff;
+}
+
+/* ======================================
+   HERO
+========================================= */
+.u-section-hero-ayudas {
+  background-image: url("../images/petss.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  text-align: center;
+  color: #fff;
+  padding: 120px 120px 100px;
+}
+
+.u-section-hero-ayudas h1 {
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 2.8rem;
+  text-shadow: 4px 4px 10px rgba(0,0,0,0.6);
+  margin-bottom: 15px;
+}
+
+.u-section-hero-ayudas p {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 1.2rem;
+  color: #fefefe;
+}
+
+/* ======================================
+   SECCIÓN FORMAS DE AYUDAR
+========================================= */
+.u-section-ayudas {
+  background-color: #f9fafb;
+  padding: 70px 20px;
+  text-align: center;
+}
+
+.u-section-ayudas h2 {
+  color: #1c4966;
+  font-size: 2.2rem;
+  font-weight: 800;
+  margin-bottom: 50px;
+}
+
+.ayudas-lista {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .ayudas-lista {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+.ayuda-card {
+  background-color: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.ayuda-card:hover {
+  transform: scale(1.03);
+}
+
+.ayuda-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.ayuda-card h3 {
+  color: #2b3a55;
+  font-weight: 700;
+  font-size: 1.3rem;
+  margin: 20px 0 10px;
+}
+
+.ayuda-card p {
+  color: #444;
+  font-size: 1rem;
+  padding: 0 20px 25px;
+  line-height: 1.6;
+}
+
+/* ======================================
+   CONTACTO FINAL
+========================================= */
+.u-section-contacto {
+  background: #f1dacb;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.u-section-contacto h2 {
+  color: #1c4966;
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.u-section-contacto p {
+  max-width: 700px;
+  margin: 15px auto 25px;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.u-btn-enviar {
+  background-color: #f8a75e;
+  color: #fff;
+  padding: 12px 30px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 700;
+  transition: all 0.3s ease;
+}
+
+.u-btn-enviar:hover {
+  background-color: #ff8e2b;
+  transform: scale(1.05);
+}
+
+/* FOOTER */
+footer {
+  background-color: #2b3a55 !important; 
+  color: #fff !important;
+  text-align: center;
+  padding: 40px 20px;
+  font-size: 0.95rem;
+}
+
+/* ======================================
+   RESPONSIVE
+========================================= */
+@media (max-width: 768px) {
+  .u-section-hero-ayudas h1 {
+    font-size: 2.2rem;
+  }
+
+  .ayuda-card h3 {
+    font-size: 1.1rem;
+  }
+.ayudas-lista {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .ayudas-lista {
+    grid-template-columns: 1fr; 
+  }
+
+  .u-section-contacto h2 {
+    font-size: 1.6rem;
+  }
+}
+}
+
+.u-header .u-sheet-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 🔹 Eliminar completamente el contenedor del logo y cualquier resto */
+.u-image.u-logo,
+.u-logo,
+.u-logo-image,
+.u-header .u-image.u-logo {
+  display: none !important;
+  width: 0 !important;
+  height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: none !important;
+  background: none !important;
+  visibility: hidden !important;
+}
+
+/* Centrar el menú horizontalmente */
+.u-header .u-sheet-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Asegurar que el menú ocupe el ancho */
+.u-menu {
+  flex: 1;
+  text-align: center;
+}

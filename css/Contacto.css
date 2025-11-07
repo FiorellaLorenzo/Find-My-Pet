@@ -1,0 +1,248 @@
+.u-section-1-contacto {
+  background-image: url("../images/contacto.jpg");
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  color: #fff;
+}
+
+.u-section-1-contacto .u-sheet-1 {
+  min-height: 650px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+  padding: 0px 0px 0 0px;
+  text-align: right;
+}
+
+.u-section-1-contacto .u-text-1 {
+  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: 4px;
+  color: #fff;
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+.u-section-1-contacto .u-text-2 {
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 3rem;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.u-section-1-contacto .u-text-3 {
+  font-size: 1.2rem;
+  color: #fefefe;
+  max-width: 700px;
+}
+
+/* 📱 Responsive */
+@media (max-width: 991px) {
+  .u-section-1-contacto .u-text-2 {
+    font-size: 2.4rem;
+  }
+  .u-section-1-contacto .u-text-3 {
+    font-size: 1rem;
+    padding: 0 20px;
+  }
+}
+
+/* ======================================
+   🔹 CONFIGURACIÓN GENERAL
+========================================= */
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #333;
+  margin: 0;
+  background-color: #fff;
+}
+
+/* HERO */
+.u-section-hero {
+  background-image: url("../images/contacto.jpg");
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding: 100px 20px;
+  color: #ffffff;
+}
+
+.u-section-hero h1 {
+  font-weight: 800;
+  font-size: 2.8rem;
+  margin-bottom: 15px;
+}
+
+.u-section-hero p {
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* FORMULARIO */
+.u-section-form {
+  background-color: #fefaf6;
+  padding: 60px 20px;
+}
+
+.u-section-form .u-container {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.u-section-form h2 {
+  color: #1c4966;
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.u-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: left;
+}
+
+.u-input-group label {
+  font-weight: 600;
+  color: #2b3a55;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.u-input-group input,
+.u-input-group select,
+.u-input-group textarea {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+.u-input-group input:focus,
+.u-input-group select:focus,
+.u-input-group textarea:focus {
+  border-color: #fcb97d;
+  outline: none;
+}
+
+.u-btn-enviar {
+  background-color: #fcb97d;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  padding: 12px 40px;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  align-self: center;
+}
+
+.u-btn-enviar:hover {
+  background-color: #ff9f5c;
+  transform: scale(1.05);
+}
+
+.u-form-status {
+  text-align: center;
+  margin-top: 15px;
+  font-weight: 600;
+}
+
+/* INFO EXTRA */
+.u-section-info {
+  background-color: #ffffff;
+  text-align: center;
+  padding: 70px 20px;
+}
+
+.u-section-info h2 {
+  color: #1c4966;
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+.u-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.u-card {
+  background-color: #fefaf6;
+  border: 2px solid #fcb97d;
+  border-radius: 15px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  max-width: 300px;
+  transition: transform 0.3s ease;
+}
+
+.u-card:hover {
+  transform: scale(1.05);
+}
+
+.u-card h3 {
+  color: #1c4966;
+  margin-bottom: 10px;
+}
+
+.u-card p {
+  line-height: 1.6;
+  color: #555;
+}
+
+/* FOOTER */
+.u-footer {
+  text-align: center;
+  background-color: #2b3a55;
+  color: #fff;
+  padding: 40px 20px;
+  font-size: 0.9rem;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .u-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.u-image.u-logo,
+.u-logo,
+.u-logo-image,
+.u-header .u-image.u-logo {
+  display: none !important;
+  width: 0 !important;
+  height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: none !important;
+  background: none !important;
+  visibility: hidden !important;
+}
+
+.u-header .u-sheet-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0; /* evita espacios sobrantes */
+}
+
+.u-menu {
+  flex: 1;
+  text-align: center;
+}

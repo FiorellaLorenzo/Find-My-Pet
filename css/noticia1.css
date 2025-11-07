@@ -1,0 +1,194 @@
+/* ======================================
+   🐾 ESTILO DE NOTICIAS INTERNAS - FIND MY PET
+========================================= */
+.u-section-1-perdidas {
+  background-position: 0% 0%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  color: #fff;
+}
+
+.u-section-1-perdidas .u-sheet-1 {
+  min-height: 650px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+  padding: 0px 0px 0 0px;
+  text-align: right;
+}
+
+.u-section-1-perdidas .u-text-1 {
+  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: 4px;
+  color: #fff;
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+.u-section-1-perdidas .u-text-2 {
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 3rem;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.u-section-1-perdidas .u-text-3 {
+  font-size: 1.2rem;
+  color: #fefefe;
+  max-width: 700px;
+}
+
+/* 📱 Responsive */
+@media (max-width: 991px) {
+  .u-section-1-perdidas .u-text-2 {
+    font-size: 2.4rem;
+  }
+  .u-section-1-perdidas .u-text-3 {
+    font-size: 1rem;
+    padding: 0 20px;
+  }
+}
+/* GENERAL */
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #f2f5f7;
+  color: #2c3e50;
+  margin: 0;
+  line-height: 1.8;
+}
+
+/* HEADER */
+.u-header {
+  background-color: #2b3a55;
+  text-align: center;
+  padding: 25px 0;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}
+.u-header img {
+  width: 150px;
+}
+
+/* CONTENEDOR PRINCIPAL */
+.u-section-noticia {
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px 60px;
+}
+
+/* TARJETA CENTRAL */
+.u-card-noticia {
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.08);
+  max-width: 900px;
+  padding: 45px; /* antes era 60px */
+  animation: fadeIn 1s ease;
+}
+
+/* TITULAR */
+.u-card-noticia h1 {
+  color: #1c4966;
+  font-size: 2.4rem;
+  font-weight: 800;
+  border-left: 6px solid #fcb97d;
+  padding-left: 15px;
+  margin-bottom: 15px;
+}
+
+/* SUBTÍTULO */
+.u-card-noticia h3 {
+  color: #555;
+  font-weight: 500;
+  font-size: 1.3rem;
+  margin-bottom: 25px;
+  border-bottom: 2px solid #f0f0f0;
+  padding-bottom: 15px;
+}
+
+/* META */
+.u-meta {
+  font-size: 0.9rem;
+  color: #7a8a99;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+/* IMÁGENES */
+.u-img-noticia {
+  display: block;
+  width: 100%;
+  border-radius: 15px;
+  margin: 30px 0;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+.u-img-noticia:hover {
+  transform: scale(1.02);
+}
+
+/* PÁRRAFOS */
+.u-card-noticia p {
+  font-size: 1.1rem;
+  color: #333;
+  text-align: justify;
+  margin-bottom: 25px;
+}
+
+/* CITA DESTACADA */
+.u-quote {
+  background:  #9cbac9;
+  color: #1c4966;
+  font-style: italic;
+  font-weight: 600;
+  padding: 20px 25px;
+  border-left: 5px solid #f8a75e;
+  border-radius: 10px;
+  margin: 40px 0;
+}
+
+/* BOTÓN VOLVER */
+.u-btn-volver {
+  display: inline-block;
+  background-color: #1c4966;
+  color: #fff;
+  text-decoration: none;
+  padding: 12px 35px;
+  border-radius: 25px;
+  font-weight: 700;
+  transition: all 0.3s ease;
+}
+.u-btn-volver:hover {
+  background-color: #fcb97d;
+  color: #1c4966;
+  transform: scale(1.05);
+}
+
+/* FOOTER */
+.u-footer {
+  background-color: #2b3a55;
+  color: #fff;
+  text-align: center;
+  padding: 40px 20px 30px; /* un poco más compacto */
+  font-size: 0.95rem;
+  margin-top: 20px;
+}
+
+/* ANIMACIÓN */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .u-card-noticia {
+    padding: 30px;
+  }
+  .u-card-noticia h1 { font-size: 2rem; }
+  .u-card-noticia h3 { font-size: 1.1rem; }
+}

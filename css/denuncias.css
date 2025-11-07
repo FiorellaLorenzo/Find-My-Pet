@@ -1,0 +1,247 @@
+.u-section-1-perdidas {
+  background-image: url("../images/Maltratoanimal.jpg");
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  color: #fff;
+}
+
+.u-section-1-perdidas .u-sheet-1 {
+  min-height: 650px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+  padding: 0px 0px 0 0px;
+  text-align: right;
+}
+
+.u-section-1-perdidas .u-text-1 {
+  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: 4px;
+  color: #fff;
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+.u-section-1-perdidas .u-text-2 {
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 3rem;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.u-section-1-perdidas .u-text-3 {
+  font-size: 1.2rem;
+  color: #fefefe;
+  max-width: 700px;
+}
+
+@media (max-width: 991px) {
+  .u-section-1-perdidas .u-text-2 {
+    font-size: 2.4rem;
+  }
+  .u-section-1-perdidas .u-text-3 {
+    font-size: 1rem;
+    padding: 0 20px;
+  }
+}
+
+/* ======================================
+   CONFIGURACIÓN GENERAL
+========================================= */
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #333;
+  margin: 0;
+  background-color: #fff;
+}
+
+/* HERO */
+.u-section-hero {
+  background-image: url("../images/Maltratoanimal.jpg"); 
+  background-size: cover; 
+  background-position: center center;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding: 120px 20px 100px;
+  color: #2b3a55;
+}
+
+
+.u-section-hero h1 {
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.u-section-hero p {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 1.2rem;
+  color: #fff;
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.6);
+}
+
+/*  LEY DE MALTRATO */
+.u-section-ley {
+  background-color: #fefaf6;
+  padding: 60px 20px;
+}
+
+.u-section-ley .u-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.u-section-ley h2 {
+  color: #1c4966;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.u-section-ley p {
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.u-section-ley ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.u-section-ley ul li {
+  background: #f8f9fa;
+  border-left: 5px solid #fcb97d;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+}
+
+/* DÓNDE DENUNCIAR */
+.u-section-denunciar {
+  background-color: #ffffff;
+  padding: 60px 20px;
+}
+
+.u-section-denunciar .u-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.denuncias-lista {
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.denuncia-card {
+  background-color: #fefaf6;
+  border: 2px solid #fcb97d;
+  border-radius: 15px;
+  padding: 25px;
+  flex: 1 1 280px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.denuncia-card:hover {
+  transform: scale(1.03);
+}
+
+.denuncia-card h3 {
+  color: #1c4966;
+  margin-bottom: 10px;
+}
+
+/* CONTACTO FINAL */
+.u-section-contacto {
+  background: #fefaf6;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.u-section-contacto h2 {
+  color: #1c4966;
+  font-size: 1.9rem;
+  font-weight: 700;
+}
+
+.u-section-contacto p {
+  max-width: 700px;
+  margin: 15px auto 25px;
+  font-size: 1.1rem;
+}
+
+.u-btn-enviar {
+  background-color: #f8a75e;
+  color: #fff;
+  padding: 12px 30px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 700;
+  transition: all 0.3s ease;
+}
+
+.u-btn-enviar:hover {
+  background-color: #ff8e2b;
+  transform: scale(1.05);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .denuncias-lista {
+    flex-direction: column;
+  }
+
+  .u-section-hero h1 {
+    font-size: 2rem;
+  }
+
+  .u-section-contacto h2 {
+    font-size: 1.6rem;
+  }
+}
+
+/* FOOTER */
+footer {
+  background-color: #2b3a55 !important; 
+  color: #fff !important;
+  text-align: center;
+  padding: 40px 20px;
+  font-size: 0.95rem;
+}
+
+.u-image.u-logo,
+.u-logo,
+.u-logo-image,
+.u-header .u-image.u-logo {
+  display: none !important;
+  width: 0 !important;
+  height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: none !important;
+  background: none !important;
+  visibility: hidden !important;
+}
+
+.u-header .u-sheet-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0; /* evita espacios sobrantes */
+}
+
+.u-menu {
+  flex: 1;
+  text-align: center;
+}
